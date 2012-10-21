@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Vertex struct { // でた struct! C でポインタの次によくわからないシロモノだった...
-	X int
+	X int // 構造体の中のフィールド宣言でも型は後ろに置く
 	Y int
 }
 
