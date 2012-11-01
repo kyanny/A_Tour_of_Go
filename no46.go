@@ -6,10 +6,9 @@ func fibonacci() func() int {
 	n := 0
 	m := 1
 	return func() int {
-		ret := n
-		n = m
-		m = ret + m
-		return ret
+		retval := n
+		n, m = m, n + m
+		return retval
 	}
 }
 
